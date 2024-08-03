@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width:250px;
+            height:250px;
+            background-color: rgb(197, 94, 170);
+            color:white;
+            text-align: center;
+
+        }
+
+        .box1{
+            width:350px;
+            height:250px;
+            background-color: rgb(149, 89, 133);
+            color:white;
+            text-align: center;
+            margin:auto;
+            padding: 10px;
+
+        }
+        .box1 input{
+            margin:5px;
+            padding:4px;
+            border: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <ul>
+        <li>Frontend</li>
+       <ol type=5>
+        <l>HTML</l   i>
+        <li>CSS</li>
+        <li>BOOTSTRAP</li>
+        <li>TELWIND</li>
+       </ol>
+
+       <li>Backend</li>
+       <ul >
+        <li style="list-style-type: disc;">PHP</li>
+        <li style="list-style-type: square;">PYTHON</li>
+        <li style="list-style-type: non-fill square;">JAVA</li>
+        <li>C#</li>
+       </ul>
+     
+    </ul>
+
+    <h1 id="chng">hello beautiful</h1>
+    <button onclick="Display()">click here</button>
+
+    <div class="box" onmouseover="DataChange()" onmouseout="similar()">
+       <h1 id="bb"> hello user</h1>
+    </div>
+
+    <form class="box1">
+        <label>Product Name :</label>
+        <input type="text" name="" id="pn"><br>
+        <label>Product Quantity :</label>
+        <input type="text" name="" id="qty"><br>
+        <label>Product Rate :</label>
+        <input type="text" name="" id="rate" onblur="Mycal();"><br>
+        <label>Total Amount :</label>
+        <input type="text" name="" id="amnt"><br>
+    </form>
+  <button id="btn"> click here</button>
+
+  <button id="btn3"> change color</button>
+
+  <div class="box2">
+    <img src="pic-2.png" alt="auther img" title="author" id="img" onmouseover="Change();" onmouseout="Display5();">
+  </div> -->
+
+  <h1 id="num"> 0</h1>
+  <button onclick="Incr();">INCR</button>
+  <button onclick="Dcr();">DCR</button>
+    <script>
+        function Incr(){
+          let a= parseInt(document.getElementById('num').innerHTML);
+        
+         a=a+1;
+         console.log(a)
+        // document.write(a)
+           
+        }
+
+
+// function Change(){
+//     document.getElementById('img').src="pic-6.png";
+// }
+// function Display5(){
+//     document.getElementById('img').src="pic-2.png";
+// }
+
+
+// document.getElementById('btn3').addEventListener('click',Dis2);
+
+// function Dis2(){
+//     document.getElementById('bb').style.color='orange';
+// }
+
+//         document.getElementById('btn').addEventListener('click',Dis);
+
+//     function Dis(){
+//         alert('Hello user ')
+//     }
+//        function Display(){
+//         let a= document.getElementById('chng').innerHTML="Yes my daughter";
+        
+//        }
+
+//        function DataChange(){
+//          document.getElementById('bb').innerText="yes my client"
+//        }
+//        function similar(){
+//          document.getElementById('bb').innerText="hello user"
+//        }
+//        function Mycal(){
+//         let pname=document.getElementById('pn').value;
+//         let pqty=document.getElementById('qty').value;
+//         let rate=document.getElementById('rate').value;
+//         let total=pqty*rate;
+//         document.getElementById('amnt').value=total;
+//        }
+
+    //    for(i=1;i<6;i++){
+    //     console.log(i)
+    //    }
+
+    //    for(var i=1; i<11;i++){
+    //     for(var j=1;j<11;j++){
+    //         console.log(i,"X",j,"=",i*j);
+    //     }
+    //     console.log("===================")
+    //    }
+
+       
+let arrProduct=[10,20,30,40,50];
+
+for(let i in arrProduct){
+
+    console.log(i)
+}
+
+    </script>
+</body>
+</html>

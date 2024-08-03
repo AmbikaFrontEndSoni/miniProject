@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form</h1>
+<form name="f1" onsubmit="return validation()" method="post hh.htmlf" action="hh.html">
+    <label >Name:</label>
+    <input type="text" name="nm"><br>
+    <label >Class:</label>
+    <input type="text" name="cls"><br>
+    <label >Age:</label>
+    <input type="text" name="age"><br>
+    <label >Address:</label>
+    <input type="text" name="add"><br>
+    <button>submit</button>
+
+</form>
+<script>
+    function validation(){
+        let name=document.f1.nm.value;
+        let clas=document.f1.cls.value;
+        let address=document.f1.add.value;
+        let age=document.f1.age.value;
+        let age1=document.f1.age.value;
+
+        if(name==""){
+            alert("please enter your name");
+            document.f1.nm.focus();
+            return false;
+        }
+        if(clas==""){
+            alert("please enter your class ");
+            document.f1.cls.focus();
+            return false;
+        }
+        if(address==""){
+            alert("please enter your address");
+            document.f1.add.focus();
+            return false;
+        }
+        if(age==""){
+            alert("please enter your age");
+            document.f1.age.focus();
+            return false;
+        }
+        if(isNaN(age1)){
+            alert("please enter valid age!");
+            document.f1.age.value="";
+            document.f1.age.focus();
+            return false;
+        }
+    }
+</script>
+
+
+</body>
+</html>
